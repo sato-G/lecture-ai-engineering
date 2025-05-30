@@ -17,13 +17,17 @@ import time
 # ============================================
 st.title("Streamlit 初心者向けデモ")
 st.markdown("### コメントを解除しながらStreamlitの機能を学びましょう")
-st.markdown("このデモコードでは、コメントアウトされた部分を順番に解除しながらUIの変化を確認できます。")
+st.markdown(
+    "このデモコードでは、コメントアウトされた部分を順番に解除しながらUIの変化を確認できます。"
+)
 
 # ============================================
-# サイドバー 
+# サイドバー
 # ============================================
 st.sidebar.header("デモのガイド")
-st.sidebar.info("コードのコメントを解除して、Streamlitのさまざまな機能を確認しましょう。")
+st.sidebar.info(
+    "コードのコメントを解除して、Streamlitのさまざまな機能を確認しましょう。"
+)
 
 # ============================================
 # 基本的なUI要素
@@ -36,19 +40,19 @@ name = st.text_input("あなたの名前", "ゲスト")
 st.write(f"こんにちは、{name}さん！")
 
 # ボタン
-# st.subheader("ボタン")
-# if st.button("クリックしてください"):
-#     st.success("ボタンがクリックされました！")
+st.subheader("ボタン")
+if st.button("クリックしてください"):
+    st.success("ボタンがクリックされました！")
 
 # チェックボックス
-# st.subheader("チェックボックス")
-# if st.checkbox("チェックを入れると追加コンテンツが表示されます"):
-#     st.info("これは隠れたコンテンツです！")
+st.subheader("チェックボックス")
+if st.checkbox("チェックを入れると追加コンテンツが表示されます"):
+    st.info("これは隠れたコンテンツです！")
 
 # スライダー
-# st.subheader("スライダー")
-# age = st.slider("年齢", 0, 100, 25)
-# st.write(f"あなたの年齢: {age}")
+st.subheader("スライダー")
+age = st.slider("年齢", 0, 100, 25)
+st.write(f"あなたの年齢: {age}")
 
 # セレクトボックス
 # st.subheader("セレクトボックス")
@@ -155,7 +159,7 @@ st.write(f"こんにちは、{name}さん！")
 #     # ファイルのデータを表示
 #     bytes_data = uploaded_file.getvalue()
 #     st.write(f"ファイルサイズ: {len(bytes_data)} bytes")
-#     
+#
 #     # CSVの場合はデータフレームとして読み込む
 #     if uploaded_file.name.endswith('.csv'):
 #         df = pd.read_csv(uploaded_file)
@@ -177,7 +181,7 @@ st.write(f"こんにちは、{name}さん！")
 # }
 # </style>
 # """, unsafe_allow_html=True)
-# 
+#
 # st.markdown('<p class="big-font">これはカスタムCSSでスタイリングされたテキストです！</p>', unsafe_allow_html=True)
 
 # ============================================
