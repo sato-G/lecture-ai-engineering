@@ -1,0 +1,31 @@
+# 仮想環境
+mlops-env/
+venv/
+env/
+
+# Python関連
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# MLflow関連
+mlruns/
+
+# モデルファイル
+*.pkl
+*.joblib
+
+# テスト関連
+.pytest_cache/
+
+# IDE関連
+.vscode/
+.idea/
+
+# macOS関連
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints/
